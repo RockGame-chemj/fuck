@@ -1,0 +1,85 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(1, 1, 1, 1),
+"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+"default_portrait": "coin 2",
+"description": "",
+"display_name": "金币（女）",
+"mirror": false,
+"nicknames": [""],
+"offset": Vector2(0, 0),
+"portraits": {
+"M_01": {
+"export_overrides": {
+"image": "\"res://Males/M_01.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"QQ_1751287905445": {
+"export_overrides": {
+"image": "\"res://Males/QQ_1751287905445.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"QQ_1751288112378": {
+"export_overrides": {
+"image": "\"res://Males/QQ_1751288112378.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"coin 2": {
+"export_overrides": {
+"image": "\"res://Males/coin 2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"coin3": {
+"export_overrides": {
+"image": "\"res://Males/coin3.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"coin3man": {
+"export_overrides": {
+"image": "\"res://Males/coin3man.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"coin3woman": {
+"export_overrides": {
+"image": "\"res://Males/coin3woman.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+"scale": 1.0
+}

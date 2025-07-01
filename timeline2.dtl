@@ -1,0 +1,7 @@
+b_man (coin3man): oi,姑娘，处吗
+b_woman (coin3woman): 不处
+b_man (coin3man): 欲擒故纵吗？我喜欢
+b_woman (coin3woman): 滚啊，下头男
+b_man (coin3man): 嘤嘤嘤
+[signal arg="activate_something"]
+[end_timeline]

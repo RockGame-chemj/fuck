@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://ypfdgfybylx2"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 291.0
+offset_top = 132.0
+offset_right = 791.0
+offset_bottom = 303.0
+theme_override_font_sizes/font_size = 125
+text = "菜就多练"
+
+[node name="Label" type="Label" parent="Label"]
+layout_mode = 0
+offset_left = -35.0
+offset_top = 184.0
+offset_right = 565.0
+offset_bottom = 355.0
+theme_override_font_sizes/font_size = 50
+text = "   重启页面再来挑战
+（作者懒得打代码了）"
+
+[node name="Label" type="Label" parent="Label/Label"]
+layout_mode = 0
+offset_left = -238.0
+offset_top = 297.0
+offset_right = 362.0
+offset_bottom = 468.0
+theme_override_font_sizes/font_size = 25
+text = "由车明俊制作"

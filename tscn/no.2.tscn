@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://nmj2vc5qjdb5"]
+
+[ext_resource type="Script" path="res://tscn/no.2.gd" id="1_0crx1"]
+[ext_resource type="PackedScene" uid="uid://brn5ks788nlp1" path="res://tscn/player.tscn" id="2_q2jcr"]
+[ext_resource type="Texture2D" uid="uid://isa7vtc5dima" path="res://Males/coin3man.png" id="3_cwojh"]
+[ext_resource type="Texture2D" uid="uid://byakweak8x4et" path="res://Males/coin3woman.png" id="4_vh4hi"]
+[ext_resource type="Texture2D" uid="uid://b4n6qcrbr5fjp" path="res://Males/QQ_1751287905445.png" id="5_7x01h"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_0crx1")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_q2jcr")]
+position = Vector2(83, 129)
+
+[node name="Coin3Man" type="Sprite2D" parent="."]
+position = Vector2(402, 261.25)
+scale = Vector2(2.25, 1.92424)
+texture = ExtResource("3_cwojh")
+
+[node name="Area2D" type="Area2D" parent="Coin3Man"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Coin3Man/Area2D"]
+polygon = PackedVector2Array(-3.55556, -15.2008, -12.8889, -6.88583, -10.6667, -4.2874, -12, 0.389755, -11.1111, 5.06693, -10.2222, 7.66536, -6.66667, 10.7835, -4.88889, 11.8228, -0.888885, 13.3819, 3.55556, 11.3031, 8, 10.2638, 10.6667, 6.62598, 12.8889, 0.389755, 11.1111, -3.24803, 12, -5.32677, 14.2222, -6.88583, 5.33333, -16.2402, 0.444443, -12.0827)
+
+[node name="Coin3Woman" type="Sprite2D" parent="."]
+position = Vector2(526, 258)
+scale = Vector2(1.875, 1.625)
+texture = ExtResource("4_vh4hi")
+
+[node name="Qq1751287905445" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(587, 244)
+scale = Vector2(0.484615, 0.483791)
+texture = ExtResource("5_7x01h")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[connection signal="body_entered" from="Coin3Man/Area2D" to="." method="_on_area_2d_body_entered"]

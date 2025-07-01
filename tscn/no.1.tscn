@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://b03rd7xwbjfiu"]
+
+[ext_resource type="Script" path="res://gds/no.1.gd" id="1_p3k8x"]
+[ext_resource type="Texture2D" uid="uid://05pteerry3ob" path="res://Males/coin 2.png" id="2_o14am"]
+[ext_resource type="PackedScene" uid="uid://brn5ks788nlp1" path="res://tscn/player.tscn" id="3_3xinl"]
+[ext_resource type="Texture2D" uid="uid://b4n6qcrbr5fjp" path="res://Males/QQ_1751287905445.png" id="4_crw5g"]
+[ext_resource type="Texture2D" uid="uid://cfcdfqwv5dd71" path="res://Males/QQ_1751288112378.png" id="5_gnowi"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_p3k8x")
+
+[node name="Coin2" type="Sprite2D" parent="."]
+position = Vector2(399, 168)
+texture = ExtResource("2_o14am")
+
+[node name="Area2D" type="Area2D" parent="Coin2"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Coin2/Area2D"]
+position = Vector2(0.448531, 0.5)
+scale = Vector2(1.10294, 1.07639)
+polygon = PackedVector2Array(-2, -9, -7, -5, -8, 0, -8, 2, -7, 6, -2, 9, 4, 8, 7, 5, 9, 1, 9, -3, 6, -5, 5, -7, 2, -9)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_3xinl")]
+position = Vector2(143, 164)
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "把那颗金币捡回去卖钱"
+
+[node name="Qq1751287905445" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(883, 149)
+scale = Vector2(0.385714, 0.280549)
+texture = ExtResource("4_crw5g")
+
+[node name="Qq1751288112378" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(398.875, 167.75)
+scale = Vector2(0.675926, 0.634615)
+texture = ExtResource("5_gnowi")
+
+[connection signal="body_entered" from="Coin2/Area2D" to="." method="_on_area_2d_body_entered"]

@@ -64,8 +64,3 @@ func _close() -> void:
 ## Although rarely used, sometimes you just want NO timeline to be open.
 func _clear() -> void:
 	pass
-	
-func _ready() -> void:
-	var new_dialog = Dialogic.start('timeline') 
-	add_child(new_dialog)
-	pass

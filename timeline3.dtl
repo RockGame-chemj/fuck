@@ -1,0 +1,9 @@
+b_man (coin3man): 小鬼，哥都失恋了好想吃掉我，滚吧你
+- 没事，总能找到下一个的
+	b_man (coin3man): 啊啊啊她不一样
+	- 要不给你介绍一个？（掏出上一关的美女）
+		b_man (QQ_1751288112378): 哇塞！好火辣
+		[signal arg="haha"]
+- 要不试试我？
+	b_man (coin3man): 滚吧你，长得跟哥布林一样
+	[signal arg="over"]
